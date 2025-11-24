@@ -1,2 +1,2 @@
 # Tech_shop_ReactJs_Project
-A React.js e-commerce web app featuring product listings, detailed pages, cart management, search, filters, and dynamic UI components. Built with modern React hooks and component-based architecture for smooth shopping experience and clean, scalable code.
+A React.js e-commerce web application featuring product listings, detailed product pages, cart management, search functionality, filters, and dynamic UI components. Built using modern React Hooks, reusable components, and scalable architecture to deliver a smooth shopping experience and clean, maintainable code.

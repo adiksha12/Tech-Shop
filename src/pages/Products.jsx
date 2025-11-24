@@ -75,9 +75,9 @@ export default function Products(){
           </div>
         </div>
 
-        <div className="row mt-3">
-          <aside className="col-12 col-md-4 mb-4">
-            <div className="p-3 bg-black rounded" style={{background:'#0b0b0b', maxHeight:'78vh', overflowY:'auto'}}>
+        <div className="row mt-3 align-items-stretch">
+          <aside className="col-12 col-md-4 mb-4 d-flex">
+            <div className="p-3 bg-black rounded flex-grow-1" style={{background:'#0b0b0b', height: '100%', overflowY:'auto'}}>
               <h6 className="mb-2">Sort By</h6>
               <select className="form-select mb-3" value={sort} onChange={e=>setSort(e.target.value)}>
                 <option>Latest</option>

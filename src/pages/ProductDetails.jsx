@@ -5,6 +5,7 @@ import { Aproducts } from "../Data/Aproducts";
 import { topproducts } from "../Data/TopProducts";
 import RelatedCard from "./RelatedCard";
 import './ProductDetails.css';
+import { getReviewsForProduct } from "../Data/Reviews";
 import Footer from "../components/Footer";
 import { useCart } from "../context/CartContext";
 
@@ -256,7 +257,29 @@ export default function ProductDetails() {
               </div>
 
               <div className="tab-pane fade" id="reviews">
-                <p className="text-secondary">No reviews yet. Be the first to review this product.</p>
+                <div>
+                  {/* Render deterministic dummy reviews for all products */}
+                  {(() => {
+                    const revs = getReviewsForProduct(product.id || pid) || [];
+                    if (!revs || revs.length === 0) {
+                      return <p className="text-secondary">No reviews yet. Be the first to review this product.</p>;
+                    }
+                    return (
+                      <div className="d-flex flex-column gap-3">
+                        {revs.map((r) => (
+                          <div key={r.id} style={{ border: '1px solid rgba(255,255,255,0.04)', padding: 12, borderRadius: 8, background: '#070707' }}>
+                            <div className="d-flex justify-content-between align-items-center mb-2">
+                              <div className="fw-bold text-white">{r.name}</div>
+                              <div className="text-warning">{'★'.repeat(r.rating) + '☆'.repeat(5 - r.rating)}</div>
+                            </div>
+                            <div className="text-secondary mb-2">{r.text}</div>
+                            <div className="text-muted" style={{ fontSize: 12 }}>{r.date}</div>
+                          </div>
+                        ))}
+                      </div>
+                    )
+                  })()}
+                </div>
               </div>
             </div>
           </div>

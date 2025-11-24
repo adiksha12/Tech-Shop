@@ -121,7 +121,7 @@ export default function ProductDetails() {
   const inCart = cart.find((p) => p.id === product.id);
 
   return (
-    <div style={{ background: '#0f0f0f', minHeight: '100vh', color: '#fff', paddingBottom: 60, paddingTop: 0 }}>
+    <div style={{ background: '#0f0f0f', color: '#fff', paddingBottom: 0, paddingTop: 0 }}>
       <div className="container-fluid px-0 text-white">
 
       {/* PRODUCT SECTION */}

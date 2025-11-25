@@ -20,7 +20,7 @@ export default function Fcard({ products }) {
                 transition: "all 0.3s ease",
                 cursor: 'pointer'
               }}
-              onMouseEnter={(e) => {
+              onMouseEnter={(e) => { 
                 e.currentTarget.style.transform = "scale(1.2)";
                 e.currentTarget.style.boxShadow = "0 4px 15px rgba(255,255,255,0.3)";
               }}

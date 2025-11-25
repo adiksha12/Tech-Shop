@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -23,3 +24,7 @@ A React.js e-commerce web app featuring product listings, detailed pages, cart m
 =======
 A React.js e-commerce web application featuring product listings, detailed product pages, cart management, search functionality, filters, and dynamic UI components. Built using modern React Hooks, reusable components, and scalable architecture to deliver a smooth shopping experience and clean, maintainable code.
 >>>>>>> afdb71b2800ee53b064186da006b512183bac445
+=======
+# Tech-Shop
+Tech-Shop  using React Js
+>>>>>>> 0efb0025842d60e18ba331725d3175c6a639a3ae
